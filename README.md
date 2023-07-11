@@ -1,6 +1,34 @@
 # Ocaml-and-Modules
 
-# Football Game Tournament Summary
+## Set and Map Modules
+
+This project defines modules for sets and maps with various functionalities.
+
+### Set Module
+
+The Set module is defined with the following signature:
+
+```ocaml
+module type Set = sig
+  type t
+  val to_string : t -> string
+end
+
+## Map Module
+The Map module is defined with the following signature:
+module type Map = sig
+  type key
+  type value
+  type t
+  val empty : t
+  val set : key -> value -> t -> t
+  val get : key -> t -> value
+  val get_opt : key -> t -> value option
+  val to_string : t -> string
+end
+
+
+## Football Game Tournament Summary
 
 This program analyzes the results of a round-robin football tournament and generates a summary table and list of goalscorers. The tournament data is represented as a list of tuples, where each tuple contains information about a game in the tournament.
 
