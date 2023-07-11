@@ -54,5 +54,5 @@ The `table_and_scorers` function takes the list of game tuples as input and gene
 
 Assuming the team type is defined as follows:
 
-```python
+```ocaml
 type team = Arg | Sau | Mex | Pol | Por | Kor | Uru | Gha
