@@ -8,13 +8,13 @@ This project defines modules for sets and maps with various functionalities.
 
 The Set module is defined with the following signature:
 
-```ocaml
+
 module type Set = sig
   type t
   val to_string : t -> string
 end
 
-## Map Module
+### Map Module
 The Map module is defined with the following signature:
 module type Map = sig
   type key
@@ -28,7 +28,8 @@ module type Map = sig
 end
 
 
-## Football Game Tournament Summary
+
+# Football Game Tournament Summary
 
 This program analyzes the results of a round-robin football tournament and generates a summary table and list of goalscorers. The tournament data is represented as a list of tuples, where each tuple contains information about a game in the tournament.
 
