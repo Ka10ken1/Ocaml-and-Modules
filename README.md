@@ -8,16 +8,17 @@ This project defines modules for sets and maps with various functionalities.
 
 The Set module is defined with the following signature:
 
-'''ocaml
+```ocaml
 module type Set = sig
   type t
   val to_string : t -> string
 end
+```
 
 
 ### Map Module
 The Map module is defined with the following signature:
-'''ocaml
+```ocaml
 module type Map = sig
   type key
   type value
@@ -28,7 +29,7 @@ module type Map = sig
   val get_opt : key -> t -> value option
   val to_string : t -> string
 end
-
+```
 
 
 ## Football Game Tournament Summary
